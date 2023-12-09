@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrador\\Documents\\servidor_web\\servidor_web.csproj": {}
+    "C:\\Users\\Ulises\\Documents\\Pollito\\servidor-web-main\\servidor-web-main\\servidor_web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrador\\Documents\\servidor_web\\servidor_web.csproj": {
+    "C:\\Users\\Ulises\\Documents\\Pollito\\servidor-web-main\\servidor-web-main\\servidor_web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrador\\Documents\\servidor_web\\servidor_web.csproj",
+        "projectUniqueName": "C:\\Users\\Ulises\\Documents\\Pollito\\servidor-web-main\\servidor-web-main\\servidor_web.csproj",
         "projectName": "servidor_web",
-        "projectPath": "C:\\Users\\Administrador\\Documents\\servidor_web\\servidor_web.csproj",
-        "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrador\\Documents\\servidor_web\\obj\\",
+        "projectPath": "C:\\Users\\Ulises\\Documents\\Pollito\\servidor-web-main\\servidor-web-main\\servidor_web.csproj",
+        "packagesPath": "C:\\Users\\Ulises\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ulises\\Documents\\Pollito\\servidor-web-main\\servidor-web-main\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Ulises\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -38,7 +38,21 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.0, )"
             }

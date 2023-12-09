@@ -1,16 +1,29 @@
-// Ejemplo en un controlador ASP.NET MVC
-public class ProductoController : Controller
-{
-    private readonly ProductosServicio _mi_servicio;
+using System;
+using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
+using Entidades;
 
-    public ProductoControlador(ProductosServicio productos_servicio)
+[Route("api/[controller]")]
+public class ProductosController : Controller
+{
+    private readonly ProductosServicio _productos_servicio;
+
+    public ProductosController(ProductosServicio productos_servicio)
     {
-        _mi_servicio = productos_servicio;
+        _productos_servicio = productos_servicio;
     }
 
+    [HttpGet]
+    public async Task<IEnumerable<Producto>> VerProductos()
+    {
+        return await _productos_servicio.ObtenerProductosAsync();
+    }
+
+    [HttpGet("{id}")]
     public async Task<IActionResult> VerProducto(int id)
     {
-        var producto = await _mi_servicio.ObtenerProductoPorIdAsync(id);
+        var producto = await _productos_servicio.ObtenerProductoPorIdAsync(id);
 
         if (producto == null)
         {
@@ -20,28 +33,28 @@ public class ProductoController : Controller
         return View(producto);
     }
 
-    [HttpGet]
+    /* [HttpGet]
     public IActionResult AgregarProducto()
     {
         return View();
-    }
+    } */
 
     [HttpPost]
     public async Task<IActionResult> AgregarProducto(Producto nuevoProducto)
     {
         if (ModelState.IsValid)
         {
-            await _mi_servicio.AgregarProductoAsync(nuevoProducto);
+            await _productos_servicio.AgregarProductoAsync(nuevoProducto);
             return RedirectToAction("Index"); // Redirige a la página principal u otra página
         }
 
         return View(nuevoProducto);
     }
 
-    [HttpGet]
+    [HttpPut]
     public async Task<IActionResult> EditarProducto(int id)
     {
-        var producto = await _mi_servicio.ObtenerProductoPorIdAsync(id);
+        var producto = await _productos_servicio.ObtenerProductoPorIdAsync(id);
 
         if (producto == null)
         {
@@ -51,15 +64,15 @@ public class ProductoController : Controller
         return View(producto);
     }
 
-    [HttpPost]
+    /* [HttpPost]
     public async Task<IActionResult> EditarProducto(Producto productoActualizado)
     {
         if (ModelState.IsValid)
         {
-            await _mi_servicio.ActualizarProductoAsync(productoActualizado);
+            await _productos_servicio.ActualizarProductoAsync(productoActualizado);
             return RedirectToAction("Index"); // Redirige a la página principal u otra página
         }
 
         return View(productoActualizado);
-    }
+    } */
 }
