@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VdlshtW/hcTx47du5dLMiKFKkbdLA/TREWn/v2OxHeAfnqRlS9m6FRwSWyB4aTuKp06XRJfDDOYRIYDSU8Ydfw==",
+  "dgSpecHash": "Qs5YLzXskkklphoYsa9KOpj/i31uhw0auKOhglseXq6IYiyTTEHjRyfO0J4+bFwB+8wRX4QHPEa8SjiC8afZEA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ulises\\Documents\\Pollito\\servidor-web-main\\servidor-web-main\\servidor_web.csproj",
+  "projectFilePath": "C:\\Users\\Ulises\\Documents\\Pollito\\web_server\\servidor_web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ulises\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Ulises\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.0.0\\microsoft.aspnetcore.antiforgery.2.0.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ulises\\Documents\\Pollito\\servidor-web-main\\servidor-web-main\\servidor_web.csproj": {}
+    "C:\\Users\\Ulises\\Documents\\Pollito\\web_server\\servidor_web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ulises\\Documents\\Pollito\\servidor-web-main\\servidor-web-main\\servidor_web.csproj": {
+    "C:\\Users\\Ulises\\Documents\\Pollito\\web_server\\servidor_web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ulises\\Documents\\Pollito\\servidor-web-main\\servidor-web-main\\servidor_web.csproj",
+        "projectUniqueName": "C:\\Users\\Ulises\\Documents\\Pollito\\web_server\\servidor_web.csproj",
         "projectName": "servidor_web",
-        "projectPath": "C:\\Users\\Ulises\\Documents\\Pollito\\servidor-web-main\\servidor-web-main\\servidor_web.csproj",
+        "projectPath": "C:\\Users\\Ulises\\Documents\\Pollito\\web_server\\servidor_web.csproj",
         "packagesPath": "C:\\Users\\Ulises\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ulises\\Documents\\Pollito\\servidor-web-main\\servidor-web-main\\obj\\",
+        "outputPath": "C:\\Users\\Ulises\\Documents\\Pollito\\web_server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ulises\\AppData\\Roaming\\NuGet\\NuGet.Config"

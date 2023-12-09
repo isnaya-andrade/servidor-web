@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using Entidades;
-
+namespace Controladores {
 [Route("api/[controller]")]
 public class ProductosController : Controller
 {
@@ -75,4 +75,5 @@ public class ProductosController : Controller
 
         return View(productoActualizado);
     } */
+}
 }
